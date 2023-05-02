@@ -8,7 +8,7 @@ export default function Header() {
     <header className={styles.main_header}>
         <div className={styles.navbar_brand}>|
         <Link href="/">
-          <Image src="/swapniltechk.png" alt="My logo" width={150} height={40} />
+          <Image src="/swapniltechk.png" alt="My logos" width={150} height={40} />
         </Link>
         </div>
         <Nav />
