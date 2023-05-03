@@ -20,7 +20,7 @@ const Movie =  async () => {
 
 const res = await fetch(url, options);
 const data  = await res.json();
-const main_data = data.titles;
+const main_data = data?.titles;
 console.log(data, 'data')
 
   return (
@@ -30,7 +30,7 @@ console.log(data, 'data')
     <h1>Series & Movies</h1>
    <div className={styles.card_section}>
      {
-       main_data.map((curElm)=>{
+       main_data?.map((curElm)=>{
            return <MovieCard key={curElm.id} {...curElm}/>
        })
      }
