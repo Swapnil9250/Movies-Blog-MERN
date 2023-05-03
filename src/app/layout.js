@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import './globals.css'
 import {Mulish} from 'next/font/google';
+import Footer from './components/Footer';
 
 const mulish = Mulish({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body>
       <Header/>
       {children}
+      <Footer/>
       </body>
     </html>
   )
